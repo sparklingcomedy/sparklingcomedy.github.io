@@ -1,0 +1,24 @@
+mixin nav-content()
+    ul
+        li: a(href="#about") About
+        li: a(href="#youtube") Videos
+        li: a(href="#crew") Cast
+        li: a(href="#gallery") Gallery
+        li: a(href="#contact") Contact
+
+
+.mobile-nav
+    +nav-content()
+
+
+header
+    .header-position
+        h1.logo Comedy sparkling
+
+        nav.site-nav
+            +nav-content()
+           
+
+        a(href="mailto:sparklingcomedy@gmail.com").email-link email me
+    
+        .mobile-nav-toggle: span

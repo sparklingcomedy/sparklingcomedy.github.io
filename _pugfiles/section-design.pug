@@ -1,0 +1,27 @@
+#gallery
+mixin design-img(link, img)
+ a(href=link).design-img-link
+    img(src=img)  
+
+section.design
+    .flex.flex--center
+        .col-50.flex.flex--center.dribble
+            .col-1
+                p.home-lead ..updating instagram..
+                +design-img('#', 'assets/img/f1.png')  
+                +design-img('#', 'assets/img/f2.png')    
+                +design-img('#', 'assets/img/f3.png')          
+                +design-img('#', 'assets/img/f4.png')          
+                +design-img('#', 'assets/img/f5.png')          
+                +design-img('#', 'assets/img/f6.png')          
+                .cf
+
+                a(href="").home-cta See more on instagram
+
+        .col-50.flex.flex--center.behance
+            .col-1
+                p.home-lead ..and twitter..
+                <a class="twitter-timeline" data-width="500" data-height="500" href="http://twitter.com/sparklyn4tune">Tweets by Sparklyn4tune</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>         
+                .cf
+
+                a(href="http://twitter.com/sparklyn4tune").home-cta See more on twitter

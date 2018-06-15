@@ -1,0 +1,22 @@
+#crew
+mixin face(face, words, name)
+    li.face(style="background-image: url(assets/img/"+face+");")
+        .bubble
+            p #{words}
+            cite - #{name}
+    
+section.mentoring
+    .flex.flex--center
+        .col-1
+            ul.faces
+                +face("c1.jpg","A student studying Mass Communications, last born of the family, loves shopping, wants to be an actress","Kelly Amadi. ")
+                +face("c2.jpg","Nsukka born, A students studying Electrical Electronics, hate lies","Idoko Friday. FB: Idoko.duke")
+                +face("c3.jpg","Model, Business woman, loves cooking, dislikes pride","Hart Beibele. IG: queenmirabel92")
+                +face("","You here.")
+                +face("","You here.")
+                +face("","You here.")                
+                li.back-btn.face
+                
+        .col-1
+            p.home-lead.outdented ...with my awesome cast crew...
+            a(href="http://youtube.com").home-cta Know them
